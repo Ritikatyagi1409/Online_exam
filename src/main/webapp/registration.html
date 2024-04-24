@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    
+</head>
+<style>
+    body {
+        background: linear-gradient(to right, #2eace1, #79bacf, #64b9dd);
+        font-family: 'Poppins', sans-serif;
+    }
+    
+    #form {
+        width: 300px;
+        margin: 20vh auto 0 auto;
+        padding: 20px;
+        background-color: rgb(56, 204, 145);
+        border-radius: 4px;
+        font-size: 12px;
+    }
+    
+    #form h1 {
+        color: #0f2027;
+        text-align: center;
+    }
+    
+    #form button {
+        padding: 10px;
+        margin-top: 10px;
+        width: 100%;
+        color: white;
+        background-color: rgb(41, 57, 194);
+        border: none;
+        border-radius: 4px;
+    }
+    
+    .input-control {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .input-control input {
+        border: 2px solid #f0f0f0;
+        border-radius: 4px;
+        display: block;
+        font-size: 12px;
+        padding: 10px;
+        width: 90%;
+    }
+    
+    .input-control input:focus {
+        outline: 0;
+    }
+    
+    .input-control.success input {
+        border-color: #09c372;
+    }
+    
+    .input-control.error input {
+        border-color: #ff3860;
+    }
+    
+    .input-control .error {
+        color: #ff3860;
+        font-size: 9px;
+        height: 13px;
+    }
+    .container{
+    margin-top: -97px;
+    }
+    input[type="radio"] {
+        display: none;
+    }
+
+    /* Style the custom radio button */
+    .radio-container {
+        display: inline-block;
+        cursor: pointer;
+        margin-right: 14px;
+        margin-left: 35px;
+    }
+
+    .radio-button {
+        display: inline-block;
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        border: 2px solid #888;
+        position: relative;
+        vertical-align: middle;
+    }
+
+    /* Style the dot inside the radio button */
+    .radio-button::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 10px;
+        height: 10px;
+        background-color: transparent;
+        border-radius: 50%;
+        display: none;
+    }
+
+    /* Show the dot inside the radio button when it's checked */
+    input[type="radio"]:checked + .radio-button::after {
+        display: block;
+        background-color: #43a429;
+    }
+</style>
+<body>
+    <div class="container">
+        <form id="form" action="Registration.jsp">
+            <h1>REGISTRATION PAGE</h1>
+            <div class="input-control">
+                <label for="userid">Username</label>
+                <input id="username" name="uname" type="text" required>
+                <div class="error"></div>
+            </div>
+            <div class="input-control">
+                <label for="password">Password</label>
+                <input id="password"name="password1" type="password" required>
+                <div class="error"></div>
+            </div>
+            <div class="input-control">
+                <label for="Name">Name</label>
+                <input id="Name"name="name" type="text" required>
+                <div class="error"></div>
+            </div>
+            <div class="input-control">
+                <label for="Age">Age</label>
+                <input id="Age"name="age" type="text" required>
+                <div class="error"></div>
+            </div>
+            <label for="gender">Gender :</label>
+        <label class="radio-container">
+            <input type="radio" name="gender" value="male">
+            <span class="radio-button"></span>
+            <span class="radio-label">Male</span>
+        </label>
+        <label class="radio-container">
+            <input type="radio" name="gender" value="female">
+            <span class="radio-button"></span>
+            <span class="radio-label">Female</span>
+        </label>
+            <div class="input-control">
+                <label for="SQ">Security question</label>
+                <input id="SQ"name="sq" type="text" required>
+                <div class="error"></div>
+            </div>
+            <div class="input-control">
+                <label for="Security Answer">Securtiy answer</label>
+                <input id="Sa"name="sa" type="text" required>
+                <div class="error"></div>
+            </div>
+            
+            <button type="register">Register</button>
+        </form>
+    </div>
+</body>
+</html>

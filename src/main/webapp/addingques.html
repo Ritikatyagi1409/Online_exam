@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Questions</title>
+    
+</head>
+<style>
+    body {
+        background: linear-gradient(to right, #2eace1, #79bacf, #64b9dd);
+        font-family: 'Poppins', sans-serif;
+    }
+    
+    #form {
+        width: 300px;
+        margin: 20vh auto 0 auto;
+        padding: 20px;
+        background-color: rgb(56, 204, 145);
+        border-radius: 4px;
+        font-size: 12px;
+    }
+    
+    #form h1 {
+        color: #0f2027;
+        text-align: center;
+    }
+    
+    #form button {
+        padding: 10px;
+        margin-top: 10px;
+        width: 100%;
+        color: white;
+        background-color: rgb(41, 57, 194);
+        border: none;
+        border-radius: 4px;
+    }
+    
+    .input-control {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .input-control input {
+        border: 2px solid #f0f0f0;
+        border-radius: 4px;
+        display: block;
+        font-size: 12px;
+        padding: 10px;
+        width: 90%;
+    }
+    
+    .input-control input:focus {
+        outline: 0;
+    }
+    
+    .input-control.success input {
+        border-color: #09c372;
+    }
+    
+    .input-control.error input {
+        border-color: #ff3860;
+    }
+    
+    .input-control .error {
+        color: #ff3860;
+        font-size: 9px;
+        height: 13px;
+    }
+    .container{
+    margin-top: -45px;
+    }
+</style>
+<body>
+    <div class="container">
+        <form id="form" action="AddingQues">
+            <h1>ADD QUESTION</h1>
+            <div class="input-control">
+                <label for="Enter Question">Enter Question</label>
+                <input id="Enter Question" name="question" type="text" required>
+                <div class="error"></div>
+            </div>
+            <div class="input-control">
+                <label for="Option1">Option1</label>
+                <input id="Option1"name="Option1" type="text" required>
+                <div class="error"></div>
+            </div>
+            <div class="input-control">
+                <label for="Option2">Option2</label>
+                <input id="Option2"name="Option2" type="text" required>
+                <div class="error"></div>
+            </div>
+            <div class="input-control">
+                <label for="Option3">Option3</label>
+                <input id="Option3"name="Option3" type="text" required>
+                <div class="error"></div>
+            </div>
+            <div class="input-control">
+                <label for="Option4">Option4</label>
+                <input id="Option4"name="Option4" type="text" required>
+                <div class="error"></div>
+            </div>
+            <div class="input-control">
+                <label for="Correct Option">Correct Answer</label>
+                <input id="Correct Option"name="CorrectOption"type="text" required>
+                <div class="error"></div>
+            </div>
+
+            <button type="Submit">SUBMIT</button>
+        </form>
+    </div>
+</body>
+</html>

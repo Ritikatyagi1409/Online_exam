@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Portal</title>
+    
+</head>
+<style>
+    body {
+        background: linear-gradient(to right, #2eace1, #79bacf, #64b9dd);
+        font-family: 'Poppins', sans-serif;
+    }
+    
+    #form {
+        width: 300px;
+        margin: 20vh auto 0 auto;
+        padding: 20px;
+        background-color: rgb(56, 204, 145);
+        border-radius: 4px;
+        font-size: 12px;
+    }
+    
+    #form h2 {
+        color: #0f2027;
+        text-align: center;
+    }
+    
+    #form button {
+        padding: 10px;
+        margin-top: 10px;
+        width: 100%;
+        color: white;
+        background-color: rgb(41, 57, 194);
+        border: none;
+        border-radius: 4px;
+    }
+    
+    .input-control {
+        display: flex;
+        flex-direction: column;
+    }
+    h1 {
+	color: #0f2027;
+	text-align: center;
+	padding-top: 10%;
+}
+    
+    .input-control input {
+        border: 2px solid #f0f0f0;
+        border-radius: 4px;
+        display: block;
+        font-size: 12px;
+        padding: 10px;
+        width: 90%;
+    }
+    
+    .input-control input:focus {
+        outline: 0;
+    }
+    
+    .input-control.success input {
+        border-color: #09c372;
+    }
+    
+    .input-control.error input {
+        border-color: #ff3860;
+    }
+    
+    .input-control .error {
+        color: #ff3860;
+        font-size: 9px;
+        height: 13px;
+    }
+</style>
+<body>
+    <div class="container">
+    <h1>WELCOME TO ADMIN PORTAL</h1>
+        <form id="form" action="CheckAdmin">
+            <h2>ADMIN LOGIN</h2>
+            <div class="input-control">
+                <label for="Enter admin id">ENTER ADMIN ID</label>
+                <input id="Enter admin id" name="adminid" type="email" required>
+                <div class="error"></div>
+            </div>
+            <button type="Login">LOGIN</button>
+        </form>
+    </div>
+</body>
+</html>
